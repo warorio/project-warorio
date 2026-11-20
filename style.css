@@ -2,8 +2,8 @@
    Day 3: change the two colours, check contrast, then switch on the media query. */
 
 :root {
-  --main-colour: #1a2a3a;    /* header background */
-  --accent-colour: #b45f06;  /* buttons and focus outline; passes 4.5:1 on white */
+  --main-colour: #7f9b72;    /* header background */
+  --accent-colour: #b4060682;  /* buttons and focus outline; passes 4.5:1 on white */
 }
 
 body {
@@ -22,6 +22,8 @@ header {
 
 header h1 {
   margin: 0 0 8px;
+  color: orange;
+
 }
 
 /* Flexbox puts the three links in a row with a gap between them */
