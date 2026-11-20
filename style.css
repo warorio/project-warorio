@@ -86,7 +86,7 @@ footer {
 
 /* Small screens: stack the nav links.
    Day 3, Block 2: delete the slash-star line above and the star-slash line below to switch this on. */
-/*
+
 @media (max-width: 600px) {
   nav {
     flex-direction: column;
