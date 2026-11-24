@@ -8,16 +8,6 @@
 // Keep the three field names exactly as they are, so the code on the course pages works for you.
 // Never put anyone's real name or details in this file.
 
-const records = [
-  { name: "Thing 1", category: "Group A", amount: 10 },
-  { name: "Thing 2", category: "Group A", amount: 25 },
-  { name: "Thing 3", category: "Group A", amount: 0 },
-  { name: "Thing 4", category: "Group B", amount: 40 },
-  { name: "Thing 5", category: "Group B", amount: 15 },
-  { name: "Thing 6", category: "Group B", amount: 60 },
-  { name: "Thing 7", category: "Group C", amount: 5 },
-  { name: "Thing 8", category: "Group C", amount: 30 }
-];
 
 // Facts that are true of your file (rewrite these on Day 6 so your mentor can check your conclusions):
 // 8 records. 3 are "Group A", 3 are "Group B", 2 are "Group C". 1 record has amount 0.
