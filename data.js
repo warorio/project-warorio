@@ -46,3 +46,14 @@ const clubs = [
 // Facts that are true of this file (use them to check your conclusions):
 // 12 clubs. 4 are free (costKsh is 0). 6 are for ages 13-15. 1 club has no spaces left (Drama Group).
 // No club for ages 16-18 runs on Friday, so a filter for that gives an empty list.
+const records = [
+  { name: "[Thing 1]", category: "[Category A]", amount: 0 },
+  { name: "[Thing 2]", category: "[Category B]", amount: 15 },
+  { name: "[Thing 3]", category: "[Category A]", amount: 30 },
+  // ... write each record the same way, 8 to 12 in all
+];
+
+// Facts that are true of this file:
+// [10] records. [4] are "[Category A]", [3] are "[Category B]", [3] are "[Category C]".
+// [2] records have amount 0.
+// Empty case: no record has an amount over [100], so a filter for record.amount > [100] gives an empty list.

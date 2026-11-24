@@ -40,4 +40,17 @@ if (list) {
   }
   console.log("Items shown:", items.length);
 }
+const dataList = document.querySelector("#data-list");
 
+if (dataList) {
+  for (const record of records) {
+    const li = document.createElement("li");
+    if (record.amount === 0) {
+      li.textContent = record.name + " (" + record.category + "): none right now";
+    } else {
+      li.textContent = record.name + " (" + record.category + "): " + record.amount;
+    }
+    dataList.appendChild(li);
+  }
+  console.log("Records shown:", records.length);
+}
