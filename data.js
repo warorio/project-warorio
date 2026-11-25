@@ -37,9 +37,9 @@ const clubs = [
 // 12 clubs. 4 are free (costKsh is 0). 6 are for ages 13-15. 1 club has no spaces left (Drama Group).
 // No club for ages 16-18 runs on Friday, so a filter for that gives an empty list.
 const records = [
-  { name: "Tree seedling", category: "Category A", amount: ksh.150 },
-  { name: "Watering can", category: "Category B", amount: ksh.450 },
-  { name: "Pruning shears", category: "Category C", amount: ksh.300 },
+  { name: "Tree seedling", category: "Category A", amount: 150 },
+  { name: "Watering can", category: "Category B", amount: 450 },
+  { name: "Pruning shears", category: "Category C", amount: 300 },
   // ... write each record the same way, 8 to 12 in all
 ];
 
