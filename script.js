@@ -54,3 +54,26 @@ if (dataList) {
   }
   console.log("Records shown:", records.length);
 }
+// Day 6, Block 2: keep only the free clubs
+// Only run this on a page that has the data list.
+if (dataList) {
+  const free = clubs.filter(function (club) {
+    return club.costKsh === 0;
+  });
+
+  const filterCount = document.querySelector("#filter-count");
+  const filterList = document.querySelector("#filter-list");
+  filterCount.textContent = free.length + " of " + clubs.length + " clubs match.";
+
+  for (const club of free) {
+    const li = document.createElement("li");
+    li.textContent = club.name + " on " + club.day;
+    filterList.appendChild(li);
+  }
+
+  if (free.length === 0) {
+    const li = document.createElement("li");
+    li.textContent = "No clubs match";
+    filterList.appendChild(li);
+  }
+}
