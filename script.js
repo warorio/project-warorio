@@ -54,26 +54,26 @@ if (dataList) {
   }
   console.log("Records shown:", records.length);
 }
-// Day 6, Block 2: keep only the free clubs
+// Day 6, Block 2: keep only the records in one category
 // Only run this on a page that has the data list.
 if (dataList) {
-  const free = clubs.filter(function (club) {
-    return club.costKsh === 0;
+  const matches = records.filter(function (record) {
+    return record.category === "[Category A]";
   });
 
   const filterCount = document.querySelector("#filter-count");
   const filterList = document.querySelector("#filter-list");
-  filterCount.textContent = free.length + " of " + clubs.length + " clubs match.";
+  filterCount.textContent = matches.length + " of " + records.length + " records match.";
 
-  for (const club of free) {
+  for (const record of matches) {
     const li = document.createElement("li");
-    li.textContent = club.name + " on " + club.day;
+    li.textContent = record.name;
     filterList.appendChild(li);
   }
 
-  if (free.length === 0) {
+  if (matches.length === 0) {
     const li = document.createElement("li");
-    li.textContent = "No clubs match";
+    li.textContent = "Nothing matches yet.";
     filterList.appendChild(li);
   }
 }
