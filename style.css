@@ -16,13 +16,13 @@ body {
 
 header {
   background: var(--main-colour);
-  color: #ffffff;
+  color: #de0505;
   padding: 16px;
 }
 
 header h1 {
   margin: 0 0 8px;
-  color: rgb(247, 2, 2);
+  color: rgb(183, 15, 15);
 
 }
 
