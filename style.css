@@ -2,8 +2,8 @@
    Day 3: change the two colours, check contrast, then switch on the media query. */
 
 :root {
-  --main-colour: #ce7b16;    /* header background */
-  --accent-colour: #000000;  /* buttons and focus outline; passes 4.5:1 on white */
+  --main-colour: #7f9b72;      /* header background */
+  --accent-colour: #583a01;  /* buttons and focus outline; passes 4.5:1 on white */
 }
 
 body {
@@ -11,18 +11,18 @@ body {
   line-height: 1.6;
   margin: 0;
   color: #1a1a1a;
-  background: #998888;
+  background: #ffffff;
 }
 
 header {
   background: var(--main-colour);
-  color: #de0505;
+  color: #ffea00;
   padding: 16px;
 }
 
 header h1 {
   margin: 0 0 8px;
-  color: rgb(183, 15, 15);
+  color:  orange;
 
 }
 
