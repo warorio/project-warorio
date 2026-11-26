@@ -28,7 +28,7 @@ if (toggleButton) {
 // Day 4, Block 2: first add the list section to index.html (the page gives you the HTML),
 // then delete the slash-star line below and the star-slash line at the end to switch this on.
 
-const items = ["Planting trees", "Promoting awareness on environmental conservation", "Plant-care reminders", "Watering tips"];
+const items = ["Tree planting", "Promoting awareness on environmental conservation", "Plant-care reminders", "Watering tips"];
 const list = document.querySelector("#item-list");
 
 // Only run this on a page that has the list.
