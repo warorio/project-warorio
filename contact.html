@@ -30,16 +30,18 @@
       color: #ffa500;
     }
 
-    nav { display: flex; flex-wrap: wrap; gap: 0 2.25rem; padding-left: 0.9rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 0.6rem; padding-left: 0.9rem; }
 
     nav a {
-      color: #ffffff;
+      color: #fff;
       text-decoration: none;
       font-size: 1.1rem;
-      padding: 0.3rem 0;
+      padding: 0.5rem 1.1rem;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.18);
     }
     nav a:hover,
-    nav a[aria-current="page"] { text-decoration: underline; }
+    nav a[aria-current="page"] { background: #ffa500; color: #1a1a1a; }
 
     /* ---------- Main content ---------- */
     main {
@@ -92,7 +94,7 @@
     }
     textarea { min-height: 160px; resize: vertical; }
 
-    input:focus-visible, textarea:focus-visible, select:focus-visible, button:focus-visible {
+    input:focus-visible, textarea:focus-visible, select:focus-visible, button:focus-visible, nav a:focus-visible {
       outline: 3px solid #ffa500;
       outline-offset: 2px;
     }
@@ -125,8 +127,8 @@
 
     @media (max-width: 640px) {
       header h1 { font-size: 1.7rem; }
-      nav { gap: 0 1.25rem; padding-left: 0; }
-      nav a { font-size: 1rem; }
+      nav { padding-left: 0; }
+      nav a { font-size: 1rem; padding: 0.45rem 0.9rem; }
     }
   </style>
 </head>
