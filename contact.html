@@ -3,174 +3,175 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact us</title>
-  <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About  the movement</a>
-      <a href="more.html">Educational materials and social center</a>
-      <a href="contact.html">Contacts</a>
-    </nav>
-  <style>
-    :root {
-      --bg: #eef1f5;
-      --surface: #ffffff;
-      --ink: #14213d;
-      --muted: #5a6478;
-      --line: #cdd4e0;
-      --accent: #2b50e6;
-      --accent-ink: #ffffff;
-      --error: #b3261e;
-      --success: #1b7f4b;
-      --radius: 10px;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0f1626;
-        --surface: #172036;
-        --ink: #e8ecf5;
-        --muted: #9aa5bd;
-        --line: #2c3857;
-        --accent: #6f8cff;
-        --accent-ink: #0f1626;
-        --error: #ff8a80;
-        --success: #5fd69a;
-      }
-    }
+  <title>Contacts | Project Warorio</title>
 
+  <style>
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      min-height: 100vh;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.55;
+      border-top: 5px solid #4a3238;
+      background: #ffffff;
+      color: #1a1a1a;
+      font-family: Verdana, Geneva, "DejaVu Sans", sans-serif;
+      line-height: 1.5;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      background: #7f9c73;
+      padding: 1.1rem 1rem 1.2rem 1.1rem;
+    }
+
+    header h1 {
+      margin: 0 0 1.1rem;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #ffa500;
+    }
+
+    nav { display: flex; flex-wrap: wrap; gap: 0 2.25rem; padding-left: 0.9rem; }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 0.3rem 0;
+    }
+    nav a:hover,
+    nav a[aria-current="page"] { text-decoration: underline; }
+
+    /* ---------- Main content ---------- */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2.25rem 1rem 3rem;
+    }
+
+    main h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin: 0 0 1.25rem;
+    }
+
+    main p {
+      font-size: 1.1rem;
+      line-height: 1.75;
+      margin: 0 0 1.5rem;
+    }
+
+    /* ---------- Contact details ---------- */
+    .details {
+      list-style: none;
+      margin: 0 0 2.25rem;
+      padding: 0;
       display: grid;
-      place-items: center;
-      padding: 2rem 1rem;
+      gap: 0.9rem;
     }
+    .details strong { display: block; font-size: 1.05rem; }
+    .details a, .details span { font-size: 1.05rem; color: #1a1a1a; }
+    .details a { color: #4f6b44; }
+    .details a:hover { color: #ffa500; }
 
-    .wrap {
-      width: 100%;
-      max-width: 960px;
-      display: grid;
-      grid-template-columns: 1fr 1.25fr;
-      gap: 3rem;
-      align-items: start;
-    }
+    /* ---------- Form ---------- */
+    form { display: grid; gap: 1.1rem; }
 
-    .intro h1 {
-      font-size: clamp(2rem, 4vw, 2.75rem);
-      line-height: 1.1;
-      letter-spacing: -0.02em;
-      margin: 0 0 1rem;
-    }
-    .intro p { color: var(--muted); max-width: 36ch; margin: 0 0 2rem; }
+    .field { display: grid; gap: 0.35rem; }
 
-    .details { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
-    .details strong { display: block; font-size: 0.95rem; }
-    .details a, .details span { color: var(--muted); text-decoration: none; }
-    .details a:hover { color: var(--accent); text-decoration: underline; }
-
-    form {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 2rem;
-      display: grid;
-      gap: 1.25rem;
-    }
-
-    .field { display: grid; gap: 0.4rem; }
-    label { font-weight: 600; font-size: 0.95rem; }
+    label { font-size: 1.05rem; font-weight: 700; }
 
     input, textarea, select {
       width: 100%;
       font: inherit;
-      color: var(--ink);
-      background: transparent;
-      border: 1px solid var(--line);
-      border-radius: 6px;
-      padding: 0.7rem 0.8rem;
+      font-size: 1.05rem;
+      color: #1a1a1a;
+      background: #ffffff;
+      border: 1px solid #7f9c73;
+      border-radius: 4px;
+      padding: 0.65rem 0.75rem;
     }
-    textarea { min-height: 150px; resize: vertical; }
+    textarea { min-height: 160px; resize: vertical; }
 
     input:focus-visible, textarea:focus-visible, select:focus-visible, button:focus-visible {
-      outline: 3px solid var(--accent);
+      outline: 3px solid #ffa500;
       outline-offset: 2px;
     }
 
     .field.invalid input,
-    .field.invalid textarea { border-color: var(--error); }
-    .error-msg { color: var(--error); font-size: 0.85rem; min-height: 1.1em; }
+    .field.invalid textarea { border-color: #b3261e; }
+    .error-msg { color: #b3261e; font-size: 0.9rem; min-height: 1.1em; }
 
     .hp { position: absolute; left: -9999px; height: 0; overflow: hidden; }
 
     button {
+      justify-self: start;
       font: inherit;
-      font-weight: 600;
-      background: var(--accent);
-      color: var(--accent-ink);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #ffffff;
+      background: #7f9c73;
       border: 0;
-      border-radius: 6px;
-      padding: 0.85rem 1.25rem;
+      border-radius: 4px;
+      padding: 0.8rem 1.75rem;
       cursor: pointer;
     }
-    button:hover { filter: brightness(1.08); }
+    button:hover { background: #6d8962; }
     button:disabled { opacity: 0.6; cursor: not-allowed; }
 
-    .status {
-      border-radius: 6px;
-      padding: 0.8rem 1rem;
-      font-size: 0.95rem;
-      display: none;
-    }
+    .status { display: none; padding: 0.8rem 1rem; border-radius: 4px; font-size: 1rem; }
     .status.show { display: block; }
-    .status.ok  { border: 1px solid var(--success); color: var(--success); }
-    .status.bad { border: 1px solid var(--error);   color: var(--error); }
+    .status.ok  { border: 1px solid #2e7d32; color: #2e7d32; }
+    .status.bad { border: 1px solid #b3261e; color: #b3261e; }
 
-    @media (max-width: 760px) {
-      .wrap { grid-template-columns: 1fr; gap: 2rem; }
-      form { padding: 1.25rem; }
+    @media (max-width: 640px) {
+      header h1 { font-size: 1.7rem; }
+      nav { gap: 0 1.25rem; padding-left: 0; }
+      nav a { font-size: 1rem; }
     }
   </style>
 </head>
 
 <body>
-  <main class="wrap">
+  <header>
+    <h1>Project Warorio</h1>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About the movement</a>
+      <a href="more.html">Educational materials and social center</a>
+      <a href="contact.html" aria-current="page">Contacts</a>
+    </nav>
+  </header>
 
-    <section class="intro">
-      <h1>Send us a message</h1>
-      <p>Tell us what you need and we will reply by email, usually within one business day.</p>
+  <main>
+    <h2>Send us a message</h2>
+    <p>Tell us what you need and we will reply by email, usually within one business day.</p>
 
-      <ul class="details">
-        <li>
-          <strong>Email</strong>
-          <a href="prince.kiama@student.moringaschool.com">prince.kiama@student.moringaschool.com</a>
-        </li>
-        <li>
-          <strong>Phone</strong>
-          <a href="tel:+254184611951">0184611951</a>
-        </li>
-        <li>
-          <strong>Hours</strong>
-          <span>Thursday, 8:00–17:00 EAT</span>
-        </li>
-      </ul>
-    </section>
+    <ul class="details">
+      <li>
+        <strong>Email</strong>
+        <a href="mailto:prince.kiama@student.moringaschool.com">prince.kiama@student.moringaschool.com</a>
+      </li>
+      <li>
+        <strong>Phone</strong>
+        <a href="tel:+254184611951">0184611951</a>
+      </li>
+      <li>
+        <strong>Hours</strong>
+        <span>Thursday, 8:00–17:00 EAT</span>
+      </li>
+    </ul>
 
     <form id="contact-form" novalidate>
       <div class="field">
-        <label for="name">Prince Kiama</label>
+        <label for="name">Full name</label>
         <input id="name" name="name" type="text" autocomplete="name" required>
-        <span class="error-msg" data-for="name"></span>
+        <span class="error-msg"></span>
       </div>
 
       <div class="field">
         <label for="email">Email address</label>
         <input id="email" name="email" type="email" autocomplete="email" required>
-        <span class="error-msg" data-for="email"></span>
+        <span class="error-msg"></span>
       </div>
 
       <div class="field">
@@ -186,7 +187,7 @@
       <div class="field">
         <label for="message">Message</label>
         <textarea id="message" name="message" required minlength="10"></textarea>
-        <span class="error-msg" data-for="message"></span>
+        <span class="error-msg"></span>
       </div>
 
       <!-- Honeypot spam trap (leave empty) -->
@@ -198,7 +199,6 @@
       <button type="submit" id="submit-btn">Send message</button>
       <div id="status" class="status" role="status" aria-live="polite"></div>
     </form>
-
   </main>
 
   <script>
@@ -225,7 +225,7 @@
 
     function validate() {
       let valid = true;
-      const name = form.name, email = form.email, message = form.message;
+      const { name, email, message } = form;
 
       if (!name.value.trim()) { setError(name, "Enter your name."); valid = false; }
       else setError(name, "");
